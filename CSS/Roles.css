@@ -1,1 +1,5 @@
 /*Use Roles.css for Tanks.html, Dps.html and Support.html*/
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
