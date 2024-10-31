@@ -9,11 +9,6 @@ h2 {
     padding-bottom: 150px;
 }
 
-.hero-Picture {
-    float: left;
-    padding-right: 200px;
-}
-
 .icon {
     height: 30%;
     width: 20%;
@@ -72,3 +67,14 @@ ul {
     grid-template-rows: repeat(3, 1fr);
 }
 
+
+/* Counter & Support Charts */
+.charts {
+    height: 100px;
+    width: auto;
+}
+
+.hero-Picture {
+    float: left;
+    padding-right: 100px;
+}
