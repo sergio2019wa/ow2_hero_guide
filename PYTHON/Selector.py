@@ -26,8 +26,21 @@
         - Add new pair
             dict["city"] = "New York"
 """
-import pypdf
-from pypdf import PdfReader
+import rpd
+from flask import Flask, render_template
+app = Flask(__name__,)
+
+@app.route('/')
+def index():
+    my_dict = rpd.t_initialize()
+    # return render_template('heroSelector.html', my_dict=my_dict)
+    return render_template('heroSelector.html')
+    # return render_template('index.html', my_dict=my_dict)
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 # All Heroes Dictionary
     # Store hero
@@ -81,28 +94,39 @@ def txt_parser(file_path, role):
 
     }
     idx = 3
-    print("-------- " + role + " --------")
+    # print("-------- " + role + " --------")
     for x, y in hero_stats.items():
         if idx == 0:
             break
         output[x] = y
-        print(x.strip() + ": " + y.strip() + "%")
+        # print(x.strip() + ": " + y.strip() + "%")
         idx -= 1
     #Prints
     print()
     #Return
     return hero_stats
     
+################################################# Flask Stuff ######################################################
 
 
 
-    
 
 ################################################ Main #############################################################
 tank_info = tank_hero_function()
 damage_info = damage_hero_function()
 support_info = support_hero_function()
 
+tank_comps = rpd.t_initialize()
+damage_comps = rpd.d_initialize()
+support_comps = rpd.s_initialize()
+
+index()
+
+
 # print(tank_info)
 # print(damage_info)
 # print(support_info)
+
+print(tank_comps)
+# print(damage_comps)
+# print(support_comps)
