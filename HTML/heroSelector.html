@@ -15,31 +15,30 @@
         <a href="index2.html">Picking Heroes</a>
     </h1>
 
-    <h1>Testing Flask</h1>
-    <p>D.VA: {{ tanks. }}</p>
-    <p>Name: {{ my_dict['name'] }}</p>
+    <label for="roles">Choose a Role:</label>
+    <select name="roles" id="roles">     
+        <option value="Tank">Tank</option>
+        <option value="Damage">Damage</option>
+        <option value="Support">Support</option>
+    </select>
 
+    <label for="comp">Choose a Comp:</label>
+    <select name="comp" id="comp">     
+        <option value="Rush">Rush</option>
+        <option value="Poke">Poke</option>
+        <option value="Dive">Dive</option>
+    </select>
 
-    <!-- Role Selector -->
-    <div class="dropdown">
-        <button class="dropbtn">Role</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-
-    <!-- Comp Selector -->
-    <div class="dropdown">
-        <button class="dropbtn">Comp</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-
+    <p id="para">Some text here</p>
+    <script defer>
+        function changeColor2222() {
+            const elem = document.getElementById("para");
+            elem.style.color = newColor;
+        }
+    </script>
+    <button onclick="changeColor2222('blue');">blue</button>
+    <button onclick="changeColor2222('red');">red</button>
+    
 </body>
 
 </html>

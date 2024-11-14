@@ -27,21 +27,7 @@
             dict["city"] = "New York"
 """
 import rpd
-from flask import Flask, render_template
-app = Flask(__name__,)
-
-@app.route('/')
-def index():
-    my_dict = rpd.t_initialize()
-    # return render_template('heroSelector.html', my_dict=my_dict)
-    return render_template('heroSelector.html')
-    # return render_template('index.html', my_dict=my_dict)
-
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
+import json
 # All Heroes Dictionary
     # Store hero
 
@@ -72,7 +58,7 @@ def txt_parser(file_path, role):
     hero_stats = {
 
     }
-    data = open(file_path, "r")
+    data = open(file_path, "r", encoding="utf-8-sig")
     num = 0
     hold = ""
     while True:
@@ -83,9 +69,10 @@ def txt_parser(file_path, role):
             num = 0
             hold = content
         if num == 3:
-            snip = content.replace("%", "")
+            # removes %
+            # snip = content.replace("%", "")
             # {Hero, Win Rate}
-            hero_stats[hold] = snip
+            hero_stats[hold.strip()] = content.strip()
         num += 1
     data.close()
 
@@ -106,8 +93,16 @@ def txt_parser(file_path, role):
     #Return
     return hero_stats
     
-################################################# Flask Stuff ######################################################
+################################################# Dictionary -> JSON File ######################################################
+def python_json(role_comps, file_path):
+    # with open(str + ".json", "w") as outfile:
+    #     json.dump(role_comps, outfile)
 
+    with open(file_path, "w") as outfile:
+        json.dump(role_comps, outfile)
+
+
+    return json.dumps(role_comps, indent = 4)
 
 
 
@@ -120,13 +115,32 @@ tank_comps = rpd.t_initialize()
 damage_comps = rpd.d_initialize()
 support_comps = rpd.s_initialize()
 
-index()
+json_tank_info = python_json(tank_info, "JSON/tank_info.json")
+json_damage_info = python_json(damage_info, "JSON/damage_info.json")
+json_support_info = python_json(support_info, "JSON/support_info.json")
+
+json_tank_comps = python_json(tank_comps, "JSON/tank_comp.json")
+json_damage_comps = python_json(damage_comps, "JSON/damage_comp.json")
+json_support_comps = python_json(support_comps ,"JSON/support_comp.json")
+
+
+
+# index()
+
 
 
 # print(tank_info)
 # print(damage_info)
 # print(support_info)
 
-print(tank_comps)
+# print(tank_comps)
 # print(damage_comps)
 # print(support_comps)
+
+# print(json_tank_info)
+# print(json_damage_info)
+# print(json_support_info)
+
+# print(json_tank_info)
+# print(json_damage_info)
+# print(json_support_info)
