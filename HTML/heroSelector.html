@@ -6,8 +6,8 @@
                 initial-scale=1.0">
     <title>Picking Heroes</title>
     <link rel="stylesheet" type="text/css" href="../CSS/selector.css">
+    <script src="/JavaScript/selector.js"></script>
 
-    
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <select name="roles" id="roles">     
         <option value="Tank">Tank</option>
         <option value="Damage">Damage</option>
-        <option value="Support">Support</option>
+        <option value="Support">Support</option> 
     </select>
 
     <label for="comp">Choose a Comp:</label>
@@ -29,16 +29,13 @@
         <option value="Dive">Dive</option>
     </select>
 
-    <p id="para">Some text here</p>
-    <script defer>
-        function changeColor2222() {
-            const elem = document.getElementById("para");
-            elem.style.color = newColor;
-        }
-    </script>
-    <button onclick="changeColor2222('blue');">blue</button>
-    <button onclick="changeColor2222('red');">red</button>
+    <!-- Trying do an onClick w/ selector.js -->
+
+    <button id="createRecsV1" onclick="createRecsV1()">Create Recs</button>
     
+    <h3 id="demo" onclick="myFunction()">Click me to change my color.</h3> 
+    <button id="demo" onclick="myFunction()">Click me</button>    
+
 </body>
 
 </html>

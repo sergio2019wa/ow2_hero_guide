@@ -1,0 +1,67 @@
+#Gets items from output.txt and store it in a .txt
+# Parameter(s) :
+#   path1 - XXX_output.txt
+#   path2 - XXX_output2.txt
+def grab_info_d(path1, path2, heroes):
+    f = open(path1, 'r')
+    f2 = open(path2, 'w')
+
+    f_string = f.read()
+    HPR_index = f_string.find("HeroPick Rate") + 13
+    HWR_index = f_string.find("HeroWin Rate") + 12
+    HKR_index = f_string.find("HeroKDA Ratio") + 13
+
+    # Three Dicts 
+    # Hero : Percentage/Ratio
+    HPR_dict = {}
+    HWR_dict = {}
+    HKR_dict = {}
+
+    for i in range(5):
+        end = HPR_index
+        while True:
+            if (f_string[HPR_index: end] in heroes):
+                break
+            end += 1
+        hero = f_string[HPR_index: end]
+        HPR_index = end + 4 # 6 / 4 / 7
+        rate = float(f_string[HPR_index: HPR_index + 4]) # 4.78
+        HPR_dict[hero] = rate
+        HPR_index = HPR_index + 5 # 4.78%
+
+
+    for i in range(5):
+        end = HWR_index
+        while True:
+            if (f_string[HWR_index: end] in heroes):
+                break
+            end += 1
+        hero = f_string[HWR_index: end]
+        HWR_index = end + 4 # 6 / 4 / 7
+        rate = float(f_string[HWR_index: HWR_index + 5]) # 51.07
+        HWR_dict[hero] = rate
+        HWR_index = HWR_index + 6 # 51.07%
+
+    for i in range(5):
+        end = HKR_index
+        while True:
+            if (f_string[HKR_index: end] in heroes):
+                break
+            end += 1
+        hero = f_string[HKR_index: end]
+        HKR_index = end + 4 # 6 / 4 / 7
+        rate = float(f_string[HKR_index: HKR_index + 4]) # 3.71
+        HKR_dict[hero] = rate
+        HKR_index = HKR_index + 4 # 3.71
+
+    # print out contents to path2
+    print(HPR_dict)
+    print(HWR_dict)
+    print(HKR_dict)
+
+
+# grab_info_d(damage_path, damage_path2, heroes)
+# grab_info_d(tank_path, tank_path2, heroes)
+# grab_info_d(support_path, support_path2, heroes)
+# tank_info = grab_info(tank_path, tank_path2)
+# support_info = grab_info(support_path, support_path2)

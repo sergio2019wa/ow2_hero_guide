@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 46b663e28fcd1f3effa44c73f035e32f8ee7e09f sergio <sergio@DESKTOP-PK61D1I.> 1728004828 -0700	clone: from https://github.com/sergio2019wa/ow2_hero_guide.git
+46b663e28fcd1f3effa44c73f035e32f8ee7e09f c4a13974184bce1232a4f92013f305413857f9b2 Sergio <Sergio2019wa@gmail.com> 1728085578 -0700	commit: Added to Tanks.html and Roles.cc
+c4a13974184bce1232a4f92013f305413857f9b2 dbf3492846fc3d309d8186e82cd3655dbdb1b3c1 Sergio <Sergio2019wa@gmail.com> 1729904188 -0700	commit: Added to Tanks.html and Roles.cc
+dbf3492846fc3d309d8186e82cd3655dbdb1b3c1 21761049a147b7dbeb4243887237964ef7bd721c Sergio <Sergio2019wa@gmail.com> 1730335450 -0700	commit: added new tank charts to Assets folder
+21761049a147b7dbeb4243887237964ef7bd721c 8790bd6f49eda0faccc33b3d36f08b556425bac1 Sergio <Sergio2019wa@gmail.com> 1730502772 -0700	commit: Added the rest of the tank charts and cleaned up Roles.css
+8790bd6f49eda0faccc33b3d36f08b556425bac1 a022139a65fcb12d255693a65f20360d69115276 Sergio <Sergio2019wa@gmail.com> 1731094729 -0800	commit: python script to store Overbuff data
+a022139a65fcb12d255693a65f20360d69115276 8c2ef5c41a3323d207c4bc73b477db9633af8091 Sergio <Sergio2019wa@gmail.com> 1731113412 -0800	commit: Trying to connect Selector.py to hero Selector.html
+8c2ef5c41a3323d207c4bc73b477db9633af8091 5b2f3a640952f7339e0a1490c57fe82614b51386 Sergio <Sergio2019wa@gmail.com> 1731547216 -0800	commit: js
