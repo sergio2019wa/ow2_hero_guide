@@ -9,7 +9,6 @@ from bs4 import BeautifulSoup
 from html.parser import HTMLParser
 
 #################################################### Testing ###########################################################
-
 #How to open files and write to a .txt
 def testing_txt_stuff(soup_text): 
     # clear text file
@@ -29,6 +28,7 @@ def testing_txt_stuff(soup_text):
             if line.strip():
                 r.write(line)
 
+################################################## Not Testing #########################################################
 # Check if file is empty, so I don't have to keep pulling from OverBuff
 # Don't use it for final product
 def if_file_empty(path):
@@ -37,9 +37,6 @@ def if_file_empty(path):
         return True
     return False
 
-
-
-################################################## Not Testing #########################################################
 # Get url content and print it to ___output.txt while  
 # Parameters
     # url: Overbuff page with specified role[Damage, Tank, Support]
@@ -64,8 +61,7 @@ def html_and_soup(url, path):
     with open(path, 'w') as f:
         f.write(soup.get_text())
 
-
-    # Grab 3 charts of information of requested role
+# Grab 3 charts of information of requested role
 def grab_info_v1(path1, path2, heroes, dts_length):
     f = open(path1, 'r')
     f_string = f.read()
@@ -105,11 +101,6 @@ def helper_v1(f_string, heroes, dts_length, stat_length, offset, xxx_index):
         xxx_index = xxx_index + offset + stat_length
     return xxx_dict
 
-     
-
-    
-
-
 ########################################################## Main #########################################################
 # URLS:
 over_buff_homepage = "https://www.overbuff.com/meta?platform=pc&gameMode=competitive&timeWindow=3months/"
@@ -144,4 +135,3 @@ heroes = ['Ana', 'Ashe', 'Baptiste', 'Bastion', 'Brigitte', 'Cassidy', 'D.Va', '
 grab_info_v1(damage_path, damage_path2, heroes, 6)
 grab_info_v1(tank_path, tank_path2, heroes, 4)
 grab_info_v1(support_path, support_path2, heroes, 7)
-
