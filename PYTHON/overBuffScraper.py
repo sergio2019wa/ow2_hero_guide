@@ -29,15 +29,17 @@ def testing_txt_stuff(soup_text):
                 r.write(line)
 
 ################################################## Not Testing #########################################################
-# Check if file is empty, so I don't have to keep pulling from OverBuff
-# Don't use it for final product
+# Check if file exists
+# Parameters
+    # path: path of url we're checking 
 def if_file_empty(path):
     file_size = os.stat(path).st_size
     if file_size == 0:
         return True
     return False
 
-# Get url content and print it to ___output.txt while  
+
+# Get url contents and print it to xxx.txts 
 # Parameters
     # url: Overbuff page with specified role[Damage, Tank, Support]
     # path: location of __output.txt
@@ -45,7 +47,6 @@ def html_and_soup(url, path):
     # For testing purposes:
     # Check if the xxxoutput.txt exists so we don't have to do another request, 
     if (if_file_empty(path)) == False:
-        # print(path + " Not Empty")
         return
 
     #Gets the url into a package [Unreadable]
@@ -61,7 +62,12 @@ def html_and_soup(url, path):
     with open(path, 'w') as f:
         f.write(soup.get_text())
 
-# Grab 3 charts of information of requested role
+# Grab information of specified chart for requested role
+# Parameters 
+    # path1 : xxx_output.txt to parse
+    # path2 : 
+    # heroes : dict of all heores for quick lookup
+    # dts_length (int) : skip role substring (6 / 4 / 7)
 def grab_info_v1(path1, path2, heroes, dts_length):
     f = open(path1, 'r')
     f_string = f.read()
@@ -78,7 +84,8 @@ def grab_info_v1(path1, path2, heroes, dts_length):
     print(HWR_dict)
     print(HKR_dict)
 
-#Parameters
+# Parse f_string for hero inforamtion into a dictionary
+# Parameters
     # f_string - xxx.txt
     # heroes - list of heroes
     # int (role string length) - Damage / Tank / Support
@@ -127,7 +134,7 @@ heroes = ['Ana', 'Ashe', 'Baptiste', 'Bastion', 'Brigitte', 'Cassidy', 'D.Va', '
           'Soldier: 76', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer', 'Venture', 'Widowmaker', 
           'Winston', 'Wrecking Ball', 'Zarya', 'Zenyatta']
 
-# Uncomment and delete .txts if you want to refresh data Reinhardt
+# Uncomment and delete .txts if you want to refresh data
 # html_and_soup(over_buff_damage, damage_path)
 # html_and_soup(over_buff_tank, tank_path)
 # html_and_soup(over_buff_support, support_path)
