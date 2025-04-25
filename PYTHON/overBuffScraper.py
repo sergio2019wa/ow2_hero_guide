@@ -79,7 +79,7 @@ def grab_info_v1(path1, path2, heroes, dts_length):
     HWR_dict = helper_v1(f_string, heroes, dts_length, 5, 1, HWR_index)
     HKR_dict = helper_v1(f_string, heroes, dts_length, 4, 0, HKR_index)
 
-    # write xxx_dict's to path2
+    # write xxx_dict's to path2 and print to console
     print(HPR_dict)
     print(HWR_dict)
     print(HKR_dict)
@@ -118,10 +118,13 @@ over_buff_support = "https://www.overbuff.com/meta?platform=pc&gameMode=competit
 reddit_base_url = "https://www.reddit.com/r/help/comments/800glp/how_do_you_make_your_text_really_small/?rdt=64542"
 
 # File Paths:
+
+# Raw files from website
 damage_path = "./TXT/damage_output.txt"
 tank_path = "./TXT/tank_output.txt"
 support_path = "./TXT/support_output.txt"
 
+# Cleaned up file info
 damage_path2 = "./TXT/damage_output2.txt"
 tank_path2 = "./TXT/tank_output2.txt"
 support_path2 = "./TXT/support_output2.txt"
