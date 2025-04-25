@@ -6,7 +6,7 @@
                 initial-scale=1.0">
     <title>Picking Heroes</title>
     <link rel="stylesheet" type="text/css" href="../CSS/selector.css">
-    <script src="/JavaScript/selector.js"></script>
+    <script src="../JavaScript/selector.js"></script>
 
 </head>
 
@@ -15,26 +15,121 @@
         <a href="index2.html">Picking Heroes</a>
     </h1>
 
-    <label for="roles">Choose a Role:</label>
-    <select name="roles" id="roles">     
-        <option value="Tank">Tank</option>
-        <option value="Damage">Damage</option>
-        <option value="Support">Support</option> 
+    <!-- Tank -->
+    <select id = "dropdown-list-tank" onchange="changeResultTank()">
+        <option value = "">  </option>
+        <option value = "D.va"> D.va </option>
+        <option value = "Doomfist"> Doomfist </option>
+        <option value = "Hazard"> Hazard </option>
+        <option value = "Junker Queen"> Junker Queen </option>
+        <option value = "Mauga"> Mauga </option>
+        <option value = "Orisa"> Orisa </option>
+        <option value = "Ramattra"> Ramattra </option>
+        <option value = "Reindhart"> Reindhart </option>
+        <option value = "Roadhog"> Roadhog </option>
+        <option value = "Sigma"> Sigma </option>
+        <option value = "Winston"> Winston </option>
+        <option value = "Wrecking Ball"> Wrecking Ball </option>
+        <option value = "Zarya"> Zarya </option>
     </select>
+    <p id="result-tank"></p>
 
-    <label for="comp">Choose a Comp:</label>
-    <select name="comp" id="comp">     
-        <option value="Rush">Rush</option>
-        <option value="Poke">Poke</option>
-        <option value="Dive">Dive</option>
+    <!-- DPS -->
+    <select id = "dropdown-list-dps" onchange="changeResultDPS()">
+        <option value = "">  </option>
+        <option value = "Ashe"> Ashe </option>
+        <option value = "Bastion"> Bastion </option>
+        <option value = "Cassidy"> Cassidy </option>
+        <option value = "Echo"> Echo </option>
+        <option value = "Freja"> Freja </option>
+        <option value = "Genji"> Genji </option>
+        <option value = "Hanzo"> Hanzo </option>
+        <option value = "Junkrat"> Junkrat </option>
+        <option value = "Mei"> Mei </option>
+        <option value = "Pharah"> Pharah </option>
+        <option value = "Reaper"> Reaper </option>
+        <option value = "Sojourn"> Sojourn </option>
+        <option value = "Soldier: 76"> Soldier: 76 </option>
+        <option value = "Sombra"> Sombra </option>
+        <option value = "Symmetra"> Symmetra </option>
+        <option value = "Torbjorn"> Torbjorn </option>
+        <option value = "Tracer"> Tracer </option>
+        <option value = "Venture"> Venture </option>
+        <option value = "Widowmaker"> Widowmaker </option>
+
+
     </select>
+    <p id="result-dps"></p>
 
-    <!-- Trying do an onClick w/ selector.js -->
+    <!-- Support -->
+    <select id = "dropdown-list-support" onchange="changeResultSupport()">
+        <option value = "">  </option>
+        <option value = "Ana"> Ana </option>
+        <option value = "Baptiste"> Baptiste </option>
+        <option value = "Brigitte"> Brigitte </option>
+        <option value = "Illari"> Illari </option>
+        <option value = "Juno"> Juno </option>
+        <option value = "Kiriko"> Kiriko </option>
+        <option value = "Lifeweaver"> Lifeweaver </option>
+        <option value = "Lucio"> Lucio </option>
+        <option value = "Mercy"> Mercy </option>
+        <option value = "Moira"> Moira </option>
+        <option value = "Zenyatta"> Zenyatta </option>
 
-    <button id="createRecsV1" onclick="createRecsV1()">Create Recs</button>
-    
-    <h3 id="demo" onclick="myFunction()">Click me to change my color.</h3> 
-    <button id="demo" onclick="myFunction()">Click me</button>    
+    </select>
+    <p id="result-support"></p>
+
+    <!-- Maps -->
+    <select id = "dropdown-list-maps" onchange="changeResultMaps()">
+        <option value = "">  </option>
+        <option value = "Antarctic Peninsula "> Antarctic Peninsula </option>
+        <option value = "Blizzard World"> Blizzard World </option>
+        <option value = "Busan"> Busan </option>
+        <option value = "Circuit Royal"> Curcuit Royal </option>
+        <option value = "Colosseo"> Colosseo </option>
+        <option value = "Dorado"> Dorado </option>
+        <option value = "Eichenwalde"> Eichenwalde </option>
+        <option value = "Esperança"> Esperança </option>
+        <option value = "Hanaoka"> Hanaoka </option>
+        <option value = "Havana"> Havana </option>
+        <option value = "Hollywood"> Hollywood </option>
+        <option value = "Illios"> Illios </option>
+        <option value = "Junkertown"> Junkertown </option>
+        <option value = "King's Row"> King's Row </option>
+        <option value = "Lijang Tower"> Lijang Tower </option>
+        <option value = "Midtown"> Midtown </option>
+        <option value = "Nepal"> Nepal </option>
+        <option value = "New Junk City"> New Junk City </option>
+        <option value = "New Queen Street"> New Queen Street </option>
+        <option value = "Numbani"> Numbani </option>
+        <option value = "Oasis"> Oasis </option>
+        <option value = "Paraíso"> Paraíso </option>
+        <option value = "Rialto"> Rialto </option>
+        <option value = "Route 66"> Route 66 </option>
+        <option value = "Runasapi"> Runasapi </option>
+        <option value = "Samoa"> Samoa </option>
+        <option value = "Shambali Monastery"> Shambali Monastery </option>
+        <option value = "Suravasa"> Suravasa </option>
+        <option value = "Throne of Anubis"> Throne of Anubis </option>
+        <option value = "Watchpoint: Gibraltar"> Watchpoint: Gibraltar </option>
+
+    </select>
+    <p id="result-maps"></p>
+
+    <!-- Role -->
+    <select id = "dropdown-list-role" onchange="changeResultRole()">
+        <option value = "Tank"> Tank </option>
+        <option value = "Damage"> Damage </option>
+        <option value = "Support"> Support </option>
+    </select>
+    <p id="result-role"></p>
+
+
+    <section>
+        <button id="myButton2">Click Me!</button>
+    </section>
+
+
 
 </body>
 

@@ -128,16 +128,16 @@ support_path2 = "./TXT/support_output2.txt"
 
 #Lists
 heroes = ['Ana', 'Ashe', 'Baptiste', 'Bastion', 'Brigitte', 'Cassidy', 'D.Va', 'Doomfist', 
-          'Echo', 'Genji', 'Hanzo', 'Hazard', 'Illari', 'Junker Queen', 'Junkrat', 'Juno', 
+          'Echo', 'Freja','Genji', 'Hanzo', 'Hazard', 'Illari', 'Junker Queen', 'Junkrat', 'Juno', 
           'Kiriko', 'Lifeweaver', 'Lúcio', 'Mauga', 'Mei', 'Mercy', 'Moira', 'Orisa', 
           'Pharah', 'Ramattra', 'Reaper', 'Reinhardt', 'Roadhog', 'Sigma', 'Sojourn', 
           'Soldier: 76', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer', 'Venture', 'Widowmaker', 
           'Winston', 'Wrecking Ball', 'Zarya', 'Zenyatta']
 
 # Uncomment and delete .txts if you want to refresh data
-# html_and_soup(over_buff_damage, damage_path)
-# html_and_soup(over_buff_tank, tank_path)
-# html_and_soup(over_buff_support, support_path)
+html_and_soup(over_buff_damage, damage_path)
+html_and_soup(over_buff_tank, tank_path)
+html_and_soup(over_buff_support, support_path)
 
 grab_info_v1(damage_path, damage_path2, heroes, 6)
 grab_info_v1(tank_path, tank_path2, heroes, 4)
