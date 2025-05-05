@@ -1,0 +1,31 @@
+{
+    "Tank": {
+        "D.Va" : {
+            "Tank" : [
+                "Reindhart",
+                "Zarya"
+            ],
+
+            "Damage" : [
+                "Mei",
+                "Symettra"
+            ],
+
+            "Support" : [
+                "Kiriko"
+            ]
+
+        }
+
+        
+    }, 
+
+    "Damage" : {
+        
+    },
+
+    "Support" : {
+       
+    }
+
+}
