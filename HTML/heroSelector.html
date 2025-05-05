@@ -17,7 +17,7 @@
 
     <!-- Role -->
     <select id = "dropdown-list-role" onchange="changeResultRole()">
-        <option value = "Select"> Select Role</option>
+        <option value = "Select Role">-- Select Role --</option>
         <option value = "Tank"> Tank </option>
         <option value = "Damage"> Damage </option>
         <option value = "Support"> Support </option>
@@ -26,7 +26,7 @@
 
     <!-- Tank -->
     <select id = "dropdown-list-tank" onchange="changeResultTank()">
-        <option value = "Select"> Select Tank</option>
+        <option value = "Select">-- Select Tank --</option>
         <option value = "D.va"> D.va </option>
         <option value = "Doomfist"> Doomfist </option>
         <option value = "Hazard"> Hazard </option>
@@ -45,7 +45,7 @@
 
     <!-- DPS -->
     <select id = "dropdown-list-dps" onchange="changeResultDPS()">
-        <option value = "Select"> Select Damage</option>
+        <option value = "Select">-- Select Damage --</option>
         <option value = "Ashe"> Ashe </option>
         <option value = "Bastion"> Bastion </option>
         <option value = "Cassidy"> Cassidy </option>
@@ -72,7 +72,7 @@
 
     <!-- Support -->
     <select id = "dropdown-list-support" onchange="changeResultSupport()">
-        <option value = "Select"> Select Support</option>
+        <option value = "Select">-- Select Support --</option>
         <option value = "Ana"> Ana </option>
         <option value = "Baptiste"> Baptiste </option>
         <option value = "Brigitte"> Brigitte </option>
@@ -87,6 +87,17 @@
 
     </select>
     <p id="result-support"></p>
+
+    <script>
+        let element = document.getElementById("dropdown-list-tank");
+        element.setAttribute("hidden", "hidden");
+
+        let element2 = document.getElementById("dropdown-list-dps");
+        element2.setAttribute("hidden", "hidden");
+        
+        let element3 = document.getElementById("dropdown-list-support");
+        element3.setAttribute("hidden", "hidden");
+    </script>
 
     <!-- Maps
     <select id = "dropdown-list-maps" onchange="changeResultMaps()">
@@ -124,9 +135,6 @@
 
     </select>
     <p id="result-maps"></p> -->
-
-
-
 
     <section>
         <button id="myButton2">Find Counter</button>
