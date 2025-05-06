@@ -2,30 +2,94 @@
     "Tank": {
         "D.Va" : {
             "Tank" : [
-                "Reindhart",
-                "Zarya"
+                "Reindhart", "Zarya"
             ],
 
             "Damage" : [
-                "Mei",
-                "Symettra"
+                "Mei", "Symettra"
             ],
 
             "Support" : [
                 "Kiriko"
             ]
 
+        },
+
+        "Doomfist" : {
+            "Tank" : [
+                "Orisa", "Reindhart"
+            ],
+
+            "Damage" : [
+                "Sombra", "Mei", "Echo"
+            ],
+
+            "Support" : [
+                "Ana", "Mercy"
+            ]
         }
 
         
     }, 
 
     "Damage" : {
-        
+        "Ashe" : {
+            "Tank" : [
+                "Doomfist", "Winston", "Wrecking Ball"
+            ],
+
+            "Damage" : [
+                "Genji", "Tracer", "Widowmaker"
+            ],
+
+            "Support" : [
+                "Ana", "Kiriko", "Lúcio"
+            ]
+        },
+
+        "Bastion" : {
+            "Tank" : [
+                "D.Va", "Orisa", "Sigma"
+            ],
+
+            "Damage" : [
+                "Echo", "Genji", "Hanzo"
+            ],
+
+            "Support" : [
+                "Ana", "Baptiste", "Lúcio"
+            ]
+        }
     },
 
     "Support" : {
-       
+        "Ana" : {
+            "Tank" : [
+                "D.Va", "Winston"
+            ],
+
+            "Damage" : [
+                "Genji", "Sombra", "Tracer"
+            ],
+
+            "Support" : [
+                "Kiriko", "Moira"
+            ]
+        },
+
+        "Baptiste" : {
+            "Tank" : [
+                "D.Va", "Winston"
+            ],
+
+            "Damage" : [
+                "Hanzo", "Sojourn", "Widowmaker"
+            ],
+
+            "Support" : [
+                "Ana"
+            ]
+        }
     }
 
 }

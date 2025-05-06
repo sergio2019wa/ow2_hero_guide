@@ -27,7 +27,7 @@
     <!-- Tank -->
     <select id = "dropdown-list-tank" onchange="changeResultTank()">
         <option value = "Select">-- Select Tank --</option>
-        <option value = "D.va"> D.va </option>
+        <option value = "D.Va"> D.Va </option>
         <option value = "Doomfist"> Doomfist </option>
         <option value = "Hazard"> Hazard </option>
         <option value = "Junker Queen"> Junker Queen </option>
@@ -88,6 +88,25 @@
     </select>
     <p id="result-support"></p>
 
+    <select id = "dropdown-list-role2" onchange="changeResultRole()">
+        <option value = "Select Role">-- Select Role --</option>
+        <option value = "Tank"> Tank </option>
+        <option value = "Damage"> Damage </option>
+        <option value = "Support"> Support </option>
+    </select>
+
+    <p id="result-role"></p>
+
+    <section>
+        <button id="myButton2">Find Counter</button>
+    </section>
+
+    <section>
+        <div>
+            <img id="myImg" src="" alt="Image go here">
+        </div>
+    </section>
+
     <script>
         let element = document.getElementById("dropdown-list-tank");
         element.setAttribute("hidden", "hidden");
@@ -97,6 +116,13 @@
         
         let element3 = document.getElementById("dropdown-list-support");
         element3.setAttribute("hidden", "hidden");
+
+        let element4 = document.getElementById("dropdown-list-role2");
+        element4.setAttribute("hidden", "hidden");
+
+        let element5 = document.getElementById("myButton2");
+        element5.setAttribute("hidden", "hidden");
+
     </script>
 
     <!-- Maps
@@ -136,9 +162,7 @@
     </select>
     <p id="result-maps"></p> -->
 
-    <section>
-        <button id="myButton2">Find Counter</button>
-    </section>
+
 
     
 
