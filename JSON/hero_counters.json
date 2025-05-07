@@ -2,11 +2,11 @@
     "Tank": {
         "D.Va" : {
             "Tank" : [
-                "Reindhart", "Zarya"
+                "Reinhardt", "Zarya"
             ],
 
             "Damage" : [
-                "Mei", "Symettra"
+                "Mei", "Symmetra"
             ],
 
             "Support" : [
@@ -17,7 +17,7 @@
 
         "Doomfist" : {
             "Tank" : [
-                "Orisa", "Reindhart"
+                "Orisa", "Reinhardt"
             ],
 
             "Damage" : [
@@ -27,8 +27,147 @@
             "Support" : [
                 "Ana", "Mercy"
             ]
-        }
+        },
 
+        "Hazard" : {
+            "Tank" : [
+                "D.Va", "Sigma"
+            ],
+
+            "Damage" : [
+                "Cassidy", "Sombra"
+            ],
+            
+            "Support" : [
+                "Ana", "Zenyatta"
+            ]
+        },
+
+        "Junker Queen" : {
+            "Tank" : [
+                "Orisa"
+            ],
+
+            "Damage" : [
+                "Ashe", "Bastion", "Mei"
+            ],
+            
+            "Support" : [
+                "Ana", "Kiriko"
+            ]
+        },
+
+        "Mauga" : {
+            "Tank" : [
+                "Sigma"
+            ],
+
+            "Damage" : [
+                "Bastion", "Mei", "Sombra"
+            ],
+            
+            "Support" : [
+                "Ana", "Zenyatta"
+            ]
+        },
+
+        "Orisa" : {
+            "Tank" : [
+                "D.Va", "Zarya"
+            ],
+
+            "Damage" : [
+                "Mei"
+            ],
+            
+            "Support" : [
+                "Zenyatta"
+            ]
+        },
+
+        "Ramattra" : {
+            "Tank" : [
+                "D.Va", "Winston"
+            ],
+
+            "Damage" : [
+                "Sombra"
+            ],
+            
+            "Support" : [
+                "Ana", "Zenyatta"
+            ]
+        },
+
+        "Reinhardt" : {
+            "Tank" : [
+                "Ramattra"
+            ],
+
+            "Damage" : [
+                "Bastion", "Junkrat", "Pharah"
+            ],
+            
+            "Support" : [  
+                "Baptiste", "Lifeweaver"
+            ]
+        },
+
+        "Roadhog" : {
+            "Tank" : [
+                "Mauga", "Zarya"
+            ],
+
+            "Damage" : [
+                "Ashe", "Bastion", "Sombra"
+            ],
+            
+            "Support" : [
+                "Ana", "Zenyatta"
+            ]
+        },
+
+        "Sigma" : {
+            "Tank" : [
+                "D.Va", "Winston"
+            ],
+
+            "Damage" : [
+                "Ashe", "Bastion"
+            ],
+            
+            "Support" : [
+                "Baptiste"
+            ]
+        },
+
+        "Winston" : {
+            "Tank" : [
+                "D.Va", "Mauga"
+            ],
+
+            "Damage" : [
+                "Reaper"
+            ],
+            
+            "Support" : [
+                "Baptiste", "Brigitte", "Mercy"
+            ]
+        },
+
+        "Wrecking Ball" : {
+            "Tank" : [
+                "Orisa"
+            ],
+
+            "Damage" : [
+                "Sombra", "Mei", "Reaper"
+            ],
+            
+            "Support" : [
+                "Zenyatta"
+            ]
+        }
         
     }, 
 
@@ -58,6 +197,104 @@
 
             "Support" : [
                 "Ana", "Baptiste", "Lúcio"
+            ]
+        },
+
+        "Cassidy" : {
+            "Tank" : [
+                "Orisa", "Reinhardt", "Roadhog"
+            ],
+
+            "Damage" : [
+                "Ashe", "Hanzo", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Kiriko", "Lúcio", "Moira"
+            ]
+        },
+
+        "Echo" : {
+            "Tank" : [
+                "D.Va", "Sigma", "Zarya"
+            ],
+
+            "Damage" : [
+                "Ashe", "Soldier: 76", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Ana", "Baptiste", "Illari"
+            ]
+        },
+
+        "Freja" : {
+            "Tank" : [
+                "D.Va"
+            ],
+
+            "Damage" : [
+                "Genji", "Tracer", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Ana"
+            ]
+        },
+
+        "Genji" : {
+            "Tank" : [
+                "Roadhog", "Sigma", "Winston"
+            ],
+
+            "Damage" : [
+                "Mei", "Sombra", "Tracer"
+            ],
+            
+            "Support" : [
+                "Lúcio", "Moira", "Zenyatta"
+            ]
+        },
+
+        "Hanzo" : {
+            "Tank" : [
+                "D.Va", "Doomfist", "Winston"
+            ],
+
+            "Damage" : [
+                "Ashe", "Pharah", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Baptiste", "Kiriko", "Lúcio"
+            ]
+        },
+
+        "Junkrat" : {
+            "Tank" : [
+                "D.Va", "Orisa", "Zarya"
+            ],
+
+            "Damage" : [
+                "Ashe", "Pharah", "Soldier: 76"
+            ],
+            
+            "Support" : [
+                "Baptiste", "Kiriko", "Lúcio"
+            ]
+        },
+
+        "" : {
+            "Tank" : [
+
+            ],
+
+            "Damage" : [
+
+            ],
+            
+            "Support" : [
+
             ]
         }
     },

@@ -16,6 +16,8 @@
     </h1>
 
     <!-- Role -->
+    Pick the role you want to counter:
+
     <select id = "dropdown-list-role" onchange="changeResultRole()">
         <option value = "Select Role">-- Select Role --</option>
         <option value = "Tank"> Tank </option>
@@ -23,6 +25,8 @@
         <option value = "Support"> Support </option>
     </select>
     <p id="result-role"></p>
+
+    Pick the Hero you want to counter:
 
     <!-- Tank -->
     <select id = "dropdown-list-tank" onchange="changeResultTank()">
@@ -34,7 +38,7 @@
         <option value = "Mauga"> Mauga </option>
         <option value = "Orisa"> Orisa </option>
         <option value = "Ramattra"> Ramattra </option>
-        <option value = "Reindhart"> Reindhart </option>
+        <option value = "Reinhardt"> Reinhardt </option>
         <option value = "Roadhog"> Roadhog </option>
         <option value = "Sigma"> Sigma </option>
         <option value = "Winston"> Winston </option>
@@ -60,8 +64,8 @@
         <option value = "Sojourn"> Sojourn </option>
         <option value = "Soldier: 76"> Soldier: 76 </option>
         <option value = "Sombra"> Sombra </option>
-        <option value = "Symmetra"> Symmetra </option>
-        <option value = "Torbjörn"> Torbjörn </option>
+        <option value = "Symmetra"> Symmetra </option> 
+        <option value = "Törbjorn"> Torbjörn </option>
         <option value = "Tracer"> Tracer </option>
         <option value = "Venture"> Venture </option>
         <option value = "Widowmaker"> Widowmaker </option>
@@ -88,6 +92,7 @@
     </select>
     <p id="result-support"></p>
 
+    Pick the role you're playing: 
     <select id = "dropdown-list-role2" onchange="changeResultRole()">
         <option value = "Select Role">-- Select Role --</option>
         <option value = "Tank"> Tank </option>
@@ -103,10 +108,12 @@
 
     <section>
         <div>
-            <img id="myImg" src="" alt="Image go here">
+            <img id="myImg1" src="" alt="">
+            <img id="myImg2" src="" alt="">
+            <img id="myImg3" src="" alt="">
         </div>
     </section>
-
+ 
     <script>
         let element = document.getElementById("dropdown-list-tank");
         element.setAttribute("hidden", "hidden");
@@ -124,6 +131,7 @@
         element5.setAttribute("hidden", "hidden");
 
     </script>
+    
 
     <!-- Maps
     <select id = "dropdown-list-maps" onchange="changeResultMaps()">
