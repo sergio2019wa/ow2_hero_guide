@@ -11,7 +11,6 @@ function changeResultTank() {
   var json_file = readJSON('../JSON/hero_counters.json');
   myObj = JSON.parse(json_file);
   var name_string = String(x);
-  // console.log(myObj["Tank"]["D.Va"]["Tank"] + " Line 16"); //can't be [x] b/c D.Va is an edge case
   
 }
 
@@ -72,35 +71,23 @@ function provideCounters() {
 
 
 
-  var arr = myObj[first_role][chosen_hero][second_role]
-  console.log(myObj[first_role]);
-  console.log(myObj[first_role][chosen_hero]);
-  console.log(myObj[first_role][chosen_hero][second_role].length);
+  var arr = myObj[first_role][chosen_hero][second_role];
 
   let i = 1;
 
   arr.forEach(function(name) {
     displayCounter(name.toUpperCase(), second_role, i);
-    console.log(name)
     i++;
   });
 
 
 
-  // displayCounter(chosen_hero.toUpperCase(), second_role);
 }
 
 function displayCounter(chosen_hero, second_role, i) {
-  //Pic of the heroes?
   const imgElement = document.getElementById("myImg" + String(i));
-  console.log(imgElement);
-  console.log(chosen_hero);
-  console.log(second_role);
-  console.log("../Assets/images/" + second_role + "/Individual Pics/" + chosen_hero + ".png");
-
   imgElement.src = "../Assets/images/" + second_role + "/Individual Pics/" + chosen_hero + ".png";
 
-  console.log(imgElement.src);
   
 }
 
@@ -109,8 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
   button2.addEventListener('click', function() {
     clearImages();
     provideCounters();
-    
-    
   });
 });
 

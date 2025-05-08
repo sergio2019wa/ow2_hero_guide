@@ -1,0 +1,3 @@
+Highest Pick Rate{'Reinhardt': 3.17, 'Zarya': 2.7, 'D.Va': 2.21, 'Junker Queen': 2.06, 'Orisa': 1.99}
+Highest Win Rate{'Junker Queen': 52.1, 'Sigma': 51.1, 'Reinhardt': 50.96, 'Wrecking Ball': 50.21, 'Doomfist': 50.06}
+Highest KDA Ratio{'D.Va': 6.72, 'Junker Queen': 5.42, 'Wrecking Ball': 5.39, 'Zarya': 5.07, 'Mauga': 5.06}

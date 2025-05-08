@@ -284,17 +284,157 @@
             ]
         },
 
-        "" : {
+        "Mei" : {
             "Tank" : [
-
+                "D.Va", "Doomfist", "Winston"
             ],
 
             "Damage" : [
-
+                "Ashe", "Echo", "Soldier: 76"
             ],
             
             "Support" : [
+                "Baptiste", "Kiriko", "Lúcio"
+            ]
+        },
 
+        "Pharah" : {
+            "Tank" : [
+                "D.Va", "Sigma", "Zarya"
+            ],
+
+            "Damage" : [
+                "Ashe", "Soldier: 76", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Ana", "Baptiste", "Mercy"
+            ]
+        },
+
+        "Reaper" : {
+            "Tank" : [
+                "D.Va", "Junker Queen", "Sigma"
+            ],
+
+            "Damage" : [
+                "Ashe", "Pharah", "Soldier: 76"
+            ],
+            
+            "Support" : [
+                "Baptiste", "Kiriko", "Lúcio"
+            ]
+        },
+
+        "Sojourn" : {
+            "Tank" : [
+                "D.Va", "Doomfist", "Winston"
+            ],
+
+            "Damage" : [
+                "Ashe", "Genji", "Soldier: 76"
+            ],
+            
+            "Support" : [
+                "Kiriko", "Lúcio", "Mercy"
+            ]
+        },
+
+        "Soldier: 76" : {
+            "Tank" : [
+                "Doomfist", "Winston","Wrecking Ball"
+            ],
+
+            "Damage" : [
+                "Cassidy", "Genji", "Widowmaker"
+            ],
+            
+            "Support" : [
+                "Lúcio", "Zenyatta"
+            ]
+        },
+
+        "Sombra" : {
+            "Tank" : [
+                "D.Va", "Orisa"
+            ],
+
+            "Damage" : [
+                "Mei", "Sombra", "Torbjörn"
+            ],
+            
+            "Support" : [
+                "Brigitte", "Kiriko", "Moira"
+            ]
+        },
+
+        "Symmetra" : {
+            "Tank" : [
+                "Reinhardt", "Wrecking Ball", "Zarya"
+            ],
+
+            "Damage" : [
+                "Cassidy", "Pharah", "Soldier: 76"
+            ], 
+
+            "Support" : [
+                "Juno", "Lúcio", "Moira"
+            ]
+        },
+
+        "Torbjörn" : {
+            "Tank" : [
+                "Orisa", "Ramattra", "Zarya"
+            ],
+
+            "Damage" : [
+                "Echo", "Hanzo", "Pharah"
+            ], 
+
+            "Support" : [
+                "Ana", "Kiriko", "Zenyatta"
+            ]
+        },
+
+        "Tracer" : {
+            "Tank" : [
+                "D.Va", "Orisa", "Sigma"
+            ],
+
+            "Damage" : [
+                "Soldier: 76", "Pharah", "Torbjörn"
+            ], 
+
+            "Support" : [
+                "Brigitte", "Lúcio", "Moira"
+            ]
+        },
+
+        "Venture" : {
+            "Tank" : [
+                "Ramattra", "Reinhardt", "Sigma"
+            ],
+
+            "Damage" : [
+                "Cassidy", "Mei", "Sombra"
+            ], 
+
+            "Support" : [
+                "Ana", "Lifeweaver", "Juno"
+            ]
+        },
+
+        "Widowmaker" : {
+            "Tank" : [
+                "Doomfist", "Sigma", "Winston"
+            ],
+
+            "Damage" : [
+                "Genji", "Tracer", "Tracer"
+            ], 
+
+            "Support" : [
+                "Kiriko", "Lúcio", "Mercy"
             ]
         }
     },
@@ -325,6 +465,132 @@
 
             "Support" : [
                 "Ana"
+            ]
+        },
+
+        "Brigitte" : {
+            "Tank" : [
+                "Orisa"
+            ],
+
+            "Damage" : [
+                "Echo", "Pharah", "Mei"
+            ],
+
+            "Support" : [
+                "Baptiste", "Mercy"
+            ]
+        },
+
+        "Illari" : {
+            "Tank" : [
+                "D.Va", "Winston", "Zarya"
+            ],
+
+            "Damage" : [
+                "Echo", "Genji", "Widowmaker"
+            ],
+
+            "Support" : [
+                "Baptiste", "Kiriko"
+            ]
+        },
+
+        "Juno" : {
+            "Tank" : [
+                "Sigma"
+            ],
+
+            "Damage" : [
+                "Ashe", "Soldier: 76"
+            ],
+
+            "Support" : [
+                "Zenyatta"
+            ]
+        },
+
+        "Kiriko" : {
+            "Tank" : [
+                "Winston"
+            ],
+
+            "Damage" : [
+                "Echo", "Pharah"
+            ],
+
+            "Support" : [
+                "Ana", "Zenyatta"
+            ]
+        },
+
+        "Lifeweaver" : {
+            "Tank" : [
+                "Doomfist", "Winston"
+            ],
+
+            "Damage" : [
+                "Genji", "Sombra", "Tracer"
+            ],
+
+            "Support" : [
+                "Lúcio"
+            ]
+        },
+
+        "Lúcio" : {
+            "Tank" : [
+                "Ramattra"
+            ],
+
+            "Damage" : [
+                "Cassidy", "Echo", "Pharah"
+            ],
+
+            "Support" : [
+                "Baptiste", "Lúcio"
+            ]
+        },
+
+        "Mercy" : {
+            "Tank" : [
+                "Roadhog"
+            ],
+
+            "Damage" : [
+                "Ashe", "Cassidy", "Soldier: 76"
+            ],
+
+            "Support" : [
+                "Zenyatta"
+            ]
+        },
+
+        "Moira" : {
+            "Tank" : [
+                "D.Va", "Winston"
+            ],
+
+            "Damage" : [
+                "Echo", "Pharah", "Sombra"
+            ],
+
+            "Support" : [
+                "Ana", "Juno", "Lúcio"
+            ]
+        },
+
+        "Zenyatta" : {
+            "Tank" : [
+                "Doomfist", "Junker Queen", "Winston"
+            ],
+
+            "Damage" : [
+                "Genji", "Sombra", "Tracer"
+            ],
+
+            "Support" : [
+                "Ana", "Moira"
             ]
         }
     }

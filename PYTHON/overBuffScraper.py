@@ -9,26 +9,7 @@ from bs4 import BeautifulSoup
 from html.parser import HTMLParser
 
 #################################################### Testing ###########################################################
-#How to open files and write to a .txt
-def testing_txt_stuff(soup_text): 
-    # clear text file
-    # open('./TXT/output.txt', 'w').close()
-    # Just changed a (append) to w (write) to override file
 
-    #filling in text file
-    with open('./TXT/outputTest.txt', 'w') as f:
-        f.write(soup_text)
-
-    #Clears empty lines from outpuTest.txt than output to outputNoBlandLinesTest.txt
-    with open(
-        './TXT/outputTest.txt', 'r') as f,  open(
-            './TXT/outputNoBlankLinesTest.txt', 'w') as r:
-        
-        for line in f:
-            if line.strip():
-                r.write(line)
-
-################################################## Not Testing #########################################################
 # Check if file exists
 # Parameters
     # path: path of url we're checking 
@@ -38,16 +19,13 @@ def if_file_empty(path):
         return True
     return False
 
+################################################## Not Testing ##########################################################
 
 # Get url contents and print it to xxx.txts 
 # Parameters
     # url: Overbuff page with specified role[Damage, Tank, Support]
     # path: location of __output.txt
 def html_and_soup(url, path):
-    # For testing purposes:
-    # Check if the xxxoutput.txt exists so we don't have to do another request, 
-    if (if_file_empty(path)) == False:
-        return
 
     #Gets the url into a package [Unreadable]
     response = requests.get(url, headers = {'User-agent': 'Super Bot Power Level Over 9000'})
@@ -61,6 +39,7 @@ def html_and_soup(url, path):
     #w/ soup.get_text() put it in the output.txt file
     with open(path, 'w') as f:
         f.write(soup.get_text())
+        
 
 # Grab information of specified chart for requested role
 # Parameters 
@@ -80,6 +59,11 @@ def grab_info_v1(path1, path2, heroes, dts_length):
     HKR_dict = helper_v1(f_string, heroes, dts_length, 4, 0, HKR_index)
 
     # write xxx_dict's to path2 and print to console
+    f = open(path2, "w")
+    f.write("Highest Pick Rate" + str(HPR_dict) + "\n")
+    f.write("Highest Win Rate" + str(HWR_dict) + "\n")
+    f.write("Highest KDA Ratio" + str(HKR_dict) + "\n")
+
     print(HPR_dict)
     print(HWR_dict)
     print(HKR_dict)
