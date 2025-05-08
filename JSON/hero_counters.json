@@ -220,7 +220,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Soldier: 76", "Widowmaker"
+                "Ashe", "Soldier 76", "Widowmaker"
             ],
             
             "Support" : [
@@ -276,7 +276,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Pharah", "Soldier: 76"
+                "Ashe", "Pharah", "Soldier 76"
             ],
             
             "Support" : [
@@ -290,7 +290,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Echo", "Soldier: 76"
+                "Ashe", "Echo", "Soldier 76"
             ],
             
             "Support" : [
@@ -304,7 +304,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Soldier: 76", "Widowmaker"
+                "Ashe", "Soldier 76", "Widowmaker"
             ],
             
             "Support" : [
@@ -318,7 +318,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Pharah", "Soldier: 76"
+                "Ashe", "Pharah", "Soldier 76"
             ],
             
             "Support" : [
@@ -332,7 +332,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Genji", "Soldier: 76"
+                "Ashe", "Genji", "Soldier 76"
             ],
             
             "Support" : [
@@ -340,7 +340,7 @@
             ]
         },
 
-        "Soldier: 76" : {
+        "Soldier 76" : {
             "Tank" : [
                 "Doomfist", "Winston","Wrecking Ball"
             ],
@@ -374,7 +374,7 @@
             ],
 
             "Damage" : [
-                "Cassidy", "Pharah", "Soldier: 76"
+                "Cassidy", "Pharah", "Soldier 76"
             ], 
 
             "Support" : [
@@ -402,7 +402,7 @@
             ],
 
             "Damage" : [
-                "Soldier: 76", "Pharah", "Torbjörn"
+                "Soldier 76", "Pharah", "Torbjörn"
             ], 
 
             "Support" : [
@@ -502,7 +502,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Soldier: 76"
+                "Ashe", "Soldier 76"
             ],
 
             "Support" : [
@@ -558,7 +558,7 @@
             ],
 
             "Damage" : [
-                "Ashe", "Cassidy", "Soldier: 76"
+                "Ashe", "Cassidy", "Soldier 76"
             ],
 
             "Support" : [
