@@ -16,8 +16,7 @@
     </h1>
 
     <!-- Role -->
-    Pick the role you want to counter:
-
+    <p id="text1">Pick the role you want to counter:</p>
     <select id = "dropdown-list-role" onchange="changeResultRole()">
         <option value = "Select Role">-- Select Role --</option>
         <option value = "Tank"> Tank </option>
@@ -26,11 +25,12 @@
     </select>
     <p id="result-role"></p>
 
-    Pick the Hero you want to counter:
+    
 
+    <p id="text2">Pick the Hero you want to counter:</p>
     <!-- Tank -->
     <select id = "dropdown-list-tank" onchange="changeResultTank()">
-        <option value = "Select">-- Select Tank --</option>
+        <option value = "Select Tank">-- Select Tank --</option>
         <option value = "D.Va"> D.Va </option>
         <option value = "Doomfist"> Doomfist </option>
         <option value = "Hazard"> Hazard </option>
@@ -49,7 +49,7 @@
 
     <!-- DPS -->
     <select id = "dropdown-list-dps" onchange="changeResultDPS()">
-        <option value = "Select">-- Select Damage --</option>
+        <option value = "Select Damage">-- Select Damage --</option>
         <option value = "Ashe"> Ashe </option>
         <option value = "Bastion"> Bastion </option>
         <option value = "Cassidy"> Cassidy </option>
@@ -76,7 +76,7 @@
 
     <!-- Support -->
     <select id = "dropdown-list-support" onchange="changeResultSupport()">
-        <option value = "Select">-- Select Support --</option>
+        <option value = "Select Support">-- Select Support --</option>
         <option value = "Ana"> Ana </option>
         <option value = "Baptiste"> Baptiste </option>
         <option value = "Brigitte"> Brigitte </option>
@@ -92,7 +92,8 @@
     </select>
     <p id="result-support"></p>
 
-    Pick the role you're playing: 
+    <!-- Second Role Selection -->
+    <p id="text3">Pick the role you're playing:</p>
     <select id = "dropdown-list-role2" onchange="changeResultRole()">
         <option value = "Select Role">-- Select Role --</option>
         <option value = "Tank"> Tank </option>
@@ -108,8 +109,12 @@
 
     <section>
         <div>
+            
+            <p id="text11"> Highly Recommend </p>
             <img id="myImg1" src="" alt="">
+            <p id="text22"> Highly Recommend </p>
             <img id="myImg2" src="" alt="">
+            <p id="text33"> Highly Recommend </p>
             <img id="myImg3" src="" alt="">
         </div>
     </section>
@@ -121,14 +126,29 @@
         let element2 = document.getElementById("dropdown-list-dps");
         element2.setAttribute("hidden", "hidden");
         
-        let element3 = document.getElementById("dropdown-list-support");
-        element3.setAttribute("hidden", "hidden");
+        // let element3 = document.getElementById("dropdown-list-support");
+        // element3.setAttribute("hidden", "hidden");
 
-        let element4 = document.getElementById("dropdown-list-role2");
-        element4.setAttribute("hidden", "hidden");
+        // let element4 = document.getElementById("dropdown-list-role2");
+        // element4.setAttribute("hidden", "hidden");
 
         let element5 = document.getElementById("myButton2");
         element5.setAttribute("hidden", "hidden");
+
+        // let element6 = document.getElementById("text2");
+        // element6.setAttribute("hidden", "hidden");
+
+        // let element7 = document.getElementById("text3");
+        // element7.setAttribute("hidden", "hidden");
+
+        let element8 = document.getElementById("text11");
+        element8.setAttribute("hidden", "hidden");
+
+        let element9 = document.getElementById("text22");
+        element9.setAttribute("hidden", "hidden");
+
+        let element10 = document.getElementById("text33");
+        element10.setAttribute("hidden", "hidden");
 
     </script>
     
