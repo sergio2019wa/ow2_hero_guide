@@ -4,21 +4,12 @@
 # role picker.
 
 import requests
-import os
 import json
 from bs4 import BeautifulSoup 
 from html.parser import HTMLParser
 
 #################################################### Testing ###########################################################
 
-# Check if file exists
-# Parameters
-    # path: path of url we're checking 
-def if_file_empty(path):
-    file_size = os.stat(path).st_size
-    if file_size == 0:
-        return True
-    return False
 
 ################################################## Not Testing ##########################################################
 
@@ -59,12 +50,6 @@ def grab_info_v1(path1, path2, heroes, dts_length):
     HWR_dict = helper_v1(f_string, heroes, dts_length, 5, 1, HWR_index)
     HKR_dict = helper_v1(f_string, heroes, dts_length, 4, 0, HKR_index)
 
-    # write dicts to .txt's
-    # f = open(path2, "w")
-    # f.write("Highest Pick Rate" + str(HPR_dict) + "\n")
-    # f.write("Highest Win Rate" + str(HWR_dict) + "\n")
-    # f.write("Highest KDA Ratio" + str(HKR_dict) + "\n")
-
     # write dicts to JSON's
     with open(path2, "w") as f:
         f.write('[' + '\n')
@@ -74,11 +59,6 @@ def grab_info_v1(path1, path2, heroes, dts_length):
         f.write(',\n')
         json.dump(HKR_dict, f)
         f.write('\n' + ']')
-
-    # Print resulting dictionaries 
-    print(HPR_dict)
-    print(HWR_dict)
-    print(HKR_dict)
 
 # Parse f_string for hero inforamtion into a dictionary
 # Parameters
@@ -119,16 +99,10 @@ over_buff_support = "https://www.overbuff.com/meta?platform=pc&gameMode=competit
 reddit_base_url = "https://www.reddit.com/r/help/comments/800glp/how_do_you_make_your_text_really_small/?rdt=64542"
 
 # File Paths:
-
 # Raw files from website
 tank_path = "../TXT/tank_output.txt"
 damage_path = "../TXT/damage_output.txt"
 support_path = "../TXT/support_output.txt"
-
-# Cleaned up file info
-tank_path2 = "../TXT/tank_output2.txt"
-damage_path2 = "../TXT/damage_output2.txt"
-support_path2 = "../TXT/support_output2.txt"
 
 # JSON paths
 tank_j = "../JSON/tank_info.json"

@@ -1,1 +1,0 @@
-{"Reinhardt": 3.17, "Zarya": 2.7, "D.Va": 2.21, "Junker Queen": 2.06, "Orisa": 1.99}{"Junker Queen": 52.09, "Sigma": 51.11, "Reinhardt": 50.96, "Wrecking Ball": 50.21, "Doomfist": 50.06}{"D.Va": 6.72, "Junker Queen": 5.42, "Wrecking Ball": 5.39, "Zarya": 5.07, "Mauga": 5.06}

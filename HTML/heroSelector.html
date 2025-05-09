@@ -23,11 +23,9 @@
         <option value = "Damage"> Damage </option>
         <option value = "Support"> Support </option>
     </select>
-    <p id="result-role"></p>
-
-    
 
     <p id="text2">Pick the Hero you want to counter:</p>
+
     <!-- Tank -->
     <select id = "dropdown-list-tank" onchange="changeResultTank()">
         <option value = "Select Tank">-- Select Tank --</option>
@@ -45,7 +43,6 @@
         <option value = "Wrecking Ball"> Wrecking Ball </option>
         <option value = "Zarya"> Zarya </option>
     </select>
-    <p id="result-tank"></p>
 
     <!-- DPS -->
     <select id = "dropdown-list-dps" onchange="changeResultDPS()">
@@ -69,10 +66,7 @@
         <option value = "Tracer"> Tracer </option>
         <option value = "Venture"> Venture </option>
         <option value = "Widowmaker"> Widowmaker </option>
-
-
     </select>
-    <p id="result-dps"></p>
 
     <!-- Support -->
     <select id = "dropdown-list-support" onchange="changeResultSupport()">
@@ -88,9 +82,7 @@
         <option value = "Mercy"> Mercy </option>
         <option value = "Moira"> Moira </option>
         <option value = "Zenyatta"> Zenyatta </option>
-
     </select>
-    <p id="result-support"></p>
 
     <!-- Second Role Selection -->
     <p id="text3">Pick the role you're playing:</p>
@@ -109,7 +101,6 @@
 
     <section>
         <div>
-            
             <p id="text11"> Highly Recommend </p>
             <img id="myImg1" src="" alt="">
             <p id="text22"> Highly Recommend </p>
@@ -125,21 +116,9 @@
 
         let element2 = document.getElementById("dropdown-list-dps");
         element2.setAttribute("hidden", "hidden");
-        
-        // let element3 = document.getElementById("dropdown-list-support");
-        // element3.setAttribute("hidden", "hidden");
-
-        // let element4 = document.getElementById("dropdown-list-role2");
-        // element4.setAttribute("hidden", "hidden");
 
         let element5 = document.getElementById("myButton2");
         element5.setAttribute("hidden", "hidden");
-
-        // let element6 = document.getElementById("text2");
-        // element6.setAttribute("hidden", "hidden");
-
-        // let element7 = document.getElementById("text3");
-        // element7.setAttribute("hidden", "hidden");
 
         let element8 = document.getElementById("text11");
         element8.setAttribute("hidden", "hidden");
@@ -149,53 +128,7 @@
 
         let element10 = document.getElementById("text33");
         element10.setAttribute("hidden", "hidden");
-
     </script>
     
-
-    <!-- Maps
-    <select id = "dropdown-list-maps" onchange="changeResultMaps()">
-        <option value = "">  </option>
-        <option value = "Antarctic Peninsula "> Antarctic Peninsula </option>
-        <option value = "Blizzard World"> Blizzard World </option>
-        <option value = "Busan"> Busan </option>
-        <option value = "Circuit Royal"> Curcuit Royal </option>
-        <option value = "Colosseo"> Colosseo </option>
-        <option value = "Dorado"> Dorado </option>
-        <option value = "Eichenwalde"> Eichenwalde </option>
-        <option value = "Esperança"> Esperança </option>
-        <option value = "Hanaoka"> Hanaoka </option>
-        <option value = "Havana"> Havana </option>
-        <option value = "Hollywood"> Hollywood </option>
-        <option value = "Illios"> Illios </option>
-        <option value = "Junkertown"> Junkertown </option>
-        <option value = "King's Row"> King's Row </option>
-        <option value = "Lijang Tower"> Lijang Tower </option>
-        <option value = "Midtown"> Midtown </option>
-        <option value = "Nepal"> Nepal </option>
-        <option value = "New Junk City"> New Junk City </option>
-        <option value = "New Queen Street"> New Queen Street </option>
-        <option value = "Numbani"> Numbani </option>
-        <option value = "Oasis"> Oasis </option>
-        <option value = "Paraíso"> Paraíso </option>
-        <option value = "Rialto"> Rialto </option>
-        <option value = "Route 66"> Route 66 </option>
-        <option value = "Runasapi"> Runasapi </option>
-        <option value = "Samoa"> Samoa </option>
-        <option value = "Shambali Monastery"> Shambali Monastery </option>
-        <option value = "Suravasa"> Suravasa </option>
-        <option value = "Throne of Anubis"> Throne of Anubis </option>
-        <option value = "Watchpoint: Gibraltar"> Watchpoint: Gibraltar </option>
-
-    </select>
-    <p id="result-maps"></p> -->
-
-
-
-    
-
-
-
 </body>
-
 </html>
