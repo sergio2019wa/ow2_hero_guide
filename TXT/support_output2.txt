@@ -1,3 +1,0 @@
-Highest Pick Rate{'Ana': 7.5, 'Juno': 7.19, 'Kiriko': 4.4, 'Moira': 4.04, 'Mercy': 3.46}
-Highest Win Rate{'Juno': 51.23, 'Brigitte': 50.91, 'Zenyatta': 50.65, 'Lúcio': 50.41, 'Illari': 49.98}
-Highest KDA Ratio{'Moira': 5.72, 'Zenyatta': 5.64, 'Lifeweaver': 5.14, 'Juno': 4.85, 'Brigitte': 4.73}

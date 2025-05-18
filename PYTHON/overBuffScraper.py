@@ -4,20 +4,12 @@
 # role picker.
 
 import requests
-import os
+import json
 from bs4 import BeautifulSoup 
 from html.parser import HTMLParser
 
 #################################################### Testing ###########################################################
 
-# Check if file exists
-# Parameters
-    # path: path of url we're checking 
-def if_file_empty(path):
-    file_size = os.stat(path).st_size
-    if file_size == 0:
-        return True
-    return False
 
 ################################################## Not Testing ##########################################################
 
@@ -58,15 +50,15 @@ def grab_info_v1(path1, path2, heroes, dts_length):
     HWR_dict = helper_v1(f_string, heroes, dts_length, 5, 1, HWR_index)
     HKR_dict = helper_v1(f_string, heroes, dts_length, 4, 0, HKR_index)
 
-    # write xxx_dict's to path2 and print to console
-    f = open(path2, "w")
-    f.write("Highest Pick Rate" + str(HPR_dict) + "\n")
-    f.write("Highest Win Rate" + str(HWR_dict) + "\n")
-    f.write("Highest KDA Ratio" + str(HKR_dict) + "\n")
-
-    print(HPR_dict)
-    print(HWR_dict)
-    print(HKR_dict)
+    # write dicts to JSON's
+    with open(path2, "w") as f:
+        f.write('[' + '\n')
+        json.dump(HPR_dict, f)
+        f.write(',\n')
+        json.dump(HWR_dict, f)
+        f.write(',\n')
+        json.dump(HKR_dict, f)
+        f.write('\n' + ']')
 
 # Parse f_string for hero inforamtion into a dictionary
 # Parameters
@@ -92,6 +84,11 @@ def helper_v1(f_string, heroes, dts_length, stat_length, offset, xxx_index):
         xxx_index = xxx_index + offset + stat_length
     return xxx_dict
 
+
+
+
+
+
 ########################################################## Main #########################################################
 # URLS:
 over_buff_homepage = "https://www.overbuff.com/meta?platform=pc&gameMode=competitive&timeWindow=3months/"
@@ -102,16 +99,15 @@ over_buff_support = "https://www.overbuff.com/meta?platform=pc&gameMode=competit
 reddit_base_url = "https://www.reddit.com/r/help/comments/800glp/how_do_you_make_your_text_really_small/?rdt=64542"
 
 # File Paths:
-
 # Raw files from website
-damage_path = "./TXT/damage_output.txt"
-tank_path = "./TXT/tank_output.txt"
-support_path = "./TXT/support_output.txt"
+tank_path = "../TXT/tank_output.txt"
+damage_path = "../TXT/damage_output.txt"
+support_path = "../TXT/support_output.txt"
 
-# Cleaned up file info
-damage_path2 = "./TXT/damage_output2.txt"
-tank_path2 = "./TXT/tank_output2.txt"
-support_path2 = "./TXT/support_output2.txt"
+# JSON paths
+tank_j = "../JSON/tank_info.json"
+damage_j = "../JSON/damage_info.json"
+support_j = "../JSON/support_info.json"
 
 #Lists
 heroes = ['Ana', 'Ashe', 'Baptiste', 'Bastion', 'Brigitte', 'Cassidy', 'D.Va', 'Doomfist', 
@@ -121,11 +117,10 @@ heroes = ['Ana', 'Ashe', 'Baptiste', 'Bastion', 'Brigitte', 'Cassidy', 'D.Va', '
           'Soldier: 76', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer', 'Venture', 'Widowmaker', 
           'Winston', 'Wrecking Ball', 'Zarya', 'Zenyatta']
 
-# Uncomment and delete .txts if you want to refresh data
-html_and_soup(over_buff_damage, damage_path)
 html_and_soup(over_buff_tank, tank_path)
+html_and_soup(over_buff_damage, damage_path)
 html_and_soup(over_buff_support, support_path)
 
-grab_info_v1(damage_path, damage_path2, heroes, 6)
-grab_info_v1(tank_path, tank_path2, heroes, 4)
-grab_info_v1(support_path, support_path2, heroes, 7)
+grab_info_v1(tank_path, tank_j, heroes, 4)
+grab_info_v1(damage_path, damage_j, heroes, 6)
+grab_info_v1(support_path, support_j, heroes, 7)
